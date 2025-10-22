@@ -64,6 +64,10 @@ sysinfo.txt
 *.unitypackage.meta
 *.app
 
+# Builds 2
+WindowsBuild/
+LinuxBuild/
+
 # Crashlytics generated file
 crashlytics-build.properties
 
