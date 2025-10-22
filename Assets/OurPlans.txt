@@ -1,0 +1,9 @@
+Unity: 2022.3.14f1
+
+- Własny player controller (spróbujmy bez wbudowanego)
+- Siatka grid 3D, spawnująca prefaby na starcie na bazie formatu
+- Graficy tworzą modele, buduje się z nich modele gridów, ktoś dokłada collidery do modeli
+- Specjalne obiekty, wpływające na gracza: bomby, lawa, glut, sprężyna
+- System strzelania - broń, bomby do rzucania
+- Przeciwnicy: melee, range, małe szybkie, krowy
+- Punkty losowo pojawiające się na levelach (losowane z dostępnych opcji)
