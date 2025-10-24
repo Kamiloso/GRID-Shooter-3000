@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private string gameSceneName;
+    [SerializeField] private GameObject levelPrefab;
 
     public void StartGame()
     {
-        SceneManager.LoadScene(gameSceneName);
+        LevelInitializer.LoadLevel(new LevelInitializer.InitializeData
+        {
+            LevelPrefab = levelPrefab,
+        });
     }
 }
