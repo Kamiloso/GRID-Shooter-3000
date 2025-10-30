@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public PlayerController controller { get; private set; }
+    //public PlayerController controller { get; private set; }
     public Health health { get; private set; }
 
     protected void Awake()
     {
-        controller = GetComponent<PlayerController>();
+        //controller = GetComponent<PlayerController>();
         health = GetComponent<Health>();
     }   
 }

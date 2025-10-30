@@ -15,8 +15,16 @@ public abstract class State<T> where T : MonoBehaviour
     public virtual void EnterState() { }
     public virtual void ExitState() { }
 
-
-    public virtual void UpdateState() { }
-    public virtual void FixedUpdateState() { }
-    public virtual void LateUpdateState() { }
+	/// <summary>
+	/// Called every frame to update the current state.
+	/// </summary>
+	public virtual void UpdateState() { }
+	/// <summary>
+	/// Called at FixedUpdate to update the current state.
+	/// </summary>
+	public virtual void FixedUpdateState() { }
+	/// <summary>
+	/// Called at LateUpdate to update the current state.
+	/// </summary>
+	public virtual void LateUpdateState() { }
 }

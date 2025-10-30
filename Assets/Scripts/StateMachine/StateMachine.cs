@@ -42,7 +42,16 @@ public class StateMachine<T> where T : MonoBehaviour
 
     private static void EmptyMethod() { }
 
-    public void UpdateState() => _updateState();
-    public void FixedUpdateState() => _fixedUpdateState();
-    public void LateUpdateState() => _lateUpdateState();
+	/// <summary>
+	/// Called every frame to update the current state.
+	/// </summary>
+	public void UpdateState() => _updateState();
+	/// <summary>
+	/// Called at FixedUpdate to update the current state.
+	/// </summary>
+	public void FixedUpdateState() => _fixedUpdateState();
+	/// <summary>
+	/// Called at LateUpdate to update the current state.
+	/// </summary>
+	public void LateUpdateState() => _lateUpdateState();
 }

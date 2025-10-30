@@ -2,6 +2,9 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 
+/// <summary>
+/// Player is inactive in game and idles. Use: play idle animation.
+/// </summary>
 public class PlayerIdleState : State<PlayerController>
 {
     public PlayerIdleState(PlayerController controller, StateMachine<PlayerController> stateMachine) : base(controller, stateMachine)
