@@ -481,7 +481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1717688560}
   m_Layer: 0
-  m_Name: Player prefab is not modified
+  m_Name: Player prefab is not modified!!
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -549,6 +549,14 @@ PrefabInstance:
     - target: {fileID: 3763376136790905247, guid: 74ce959d25ce24745aa3928449ebfc25, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934432596393735518, guid: 74ce959d25ce24745aa3928449ebfc25, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934432596393735518, guid: 74ce959d25ce24745aa3928449ebfc25, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7585959659613709287, guid: 74ce959d25ce24745aa3928449ebfc25, type: 3}
       propertyPath: m_Name
