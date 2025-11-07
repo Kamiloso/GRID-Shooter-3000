@@ -5,9 +5,9 @@ using UnityEngine;
 /// <summary>
 /// Player is inactive in game and idles. Use: play idle animation.
 /// </summary>
-public class PlayerIdleState : State<PlayerController>
+public class PlayerIdlingState : State<PlayerController>
 {
-    public PlayerIdleState(PlayerController controller, StateMachine<PlayerController> stateMachine) : base(controller, stateMachine)
+    public PlayerIdlingState(PlayerController controller, StateMachine<PlayerController> stateMachine) : base(controller, stateMachine)
     {
     }
 

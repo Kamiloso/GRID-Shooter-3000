@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
 {
 	#region StateMachine
 	[HideInInspector] public StateMachine<PlayerController> stateMachine = new StateMachine<PlayerController>();
-	[HideInInspector] public PlayerIdleState playerIdleState;
+	[HideInInspector] public PlayerIdlingState playerIdleState;
 	[HideInInspector] public PlayerWalkingState walkingState;
 	[HideInInspector] public PlayerJumpingState jumpingState;
 	#endregion
@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
 		rb = GetComponent<Rigidbody>();
 
-		playerIdleState = new PlayerIdleState(this, stateMachine);
+		playerIdleState = new PlayerIdlingState(this, stateMachine);
 		walkingState = new PlayerWalkingState(this, stateMachine);
 		jumpingState = new PlayerJumpingState(this, stateMachine);
 	}
