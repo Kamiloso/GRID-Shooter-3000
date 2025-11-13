@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6177630570751295027}
   - component: {fileID: 4739743534573491916}
   - component: {fileID: 7445304464436308681}
+  - component: {fileID: 689893212638116148}
   m_Layer: 0
   m_Name: Player using Controler
   m_TagString: Player
@@ -163,10 +164,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
+  dragInAir: 0.1
+  dragOnGround: 5
   sprintSpeedMultiplier: 1.5
-  jumpHeight: 1
+  jumpHeight: 3
   gravityValue: -9.81
-  maxJumps: 1
+  additionalJumps: 1
 --- !u!114 &7445304464436308681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,8 +182,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed47edca1a5f93d489451e2b59265ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivityX: 2
-  mouseSensitivityY: 2
+  mouseSensitivityX: 3.5
+  mouseSensitivityY: 3.5
+--- !u!54 &689893212638116148
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5075334925887805873}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5870053404993516012
 GameObject:
   m_ObjectHideFlags: 0

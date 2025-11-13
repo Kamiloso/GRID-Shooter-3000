@@ -29,7 +29,7 @@ public class LinearAnimation : MonoBehaviour
     {
         rb.MovePosition(rb.position + movingSpeed * Time.fixedDeltaTime);
 
-        Quaternion newRotation = Quaternion.Euler(rb.rotation.eulerAngles + rtSgn * rotationSpeed * Time.fixedDeltaTime);
-        rb.MoveRotation(newRotation);
+        Quaternion deltaRotation = Quaternion.Euler(rtSgn * rotationSpeed * Time.fixedDeltaTime);
+        rb.MoveRotation(rb.rotation * deltaRotation);
     }
 }

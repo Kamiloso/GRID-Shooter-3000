@@ -20,7 +20,7 @@ public class LevelInitializer : MonoBehaviour
             _initializing = true;
             _initializeData = initData;
 
-            SceneManager.LoadScene(GridShooter.Core.GameSceneName);
+            SceneManager.LoadScene(Core.GameSceneName);
         }
         else
         {
@@ -47,7 +47,7 @@ public class LevelInitializer : MonoBehaviour
                 "Couldn't load level! LevelInitializer must be a singleton in a game scene and scene " +
                 "changing must be done by the LevelInitializer.LoadScene() method.");
 
-            SceneManager.LoadScene(GridShooter.Core.MenuSceneName);
+            SceneManager.LoadScene(Core.MenuSceneName);
             UnityEngine.Debug.Log("Returning to main menu...");
         }
     }

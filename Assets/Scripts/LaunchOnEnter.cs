@@ -11,6 +11,10 @@ public class LaunchOnEnter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        PlayerMovement playerMovement = other.GetComponent<PlayerMovement>();
+        if (playerMovement != null)
+            playerMovement.AddVelocity(enterImpulse);
+
         Rigidbody rb = other.attachedRigidbody;
         if (rb != null)
         {
